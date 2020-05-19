@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+
+    <div class="container">
+        <ul class="navi">
+          <li><a href="index.html" data-link-alt="매인"><span>메인</span></a></li>
+          <li><a href="boon.html" data-link-alt="본명조 이야기"><span>본명조 이야기</span></a></li>
+          <li><a href="boon2.html" data-link-alt="본명조 사이사이"><span>본명조 사이사이</span></a></li>
+          <li><a href="boon3.html" data-link-alt="본명조 크기무게"><span>본명조 크기무게</span></a></li>
+          <li><a href="boon4.html" data-link-alt="바스커빌 이야기"><span>바스커빌 이야기</span></a></li>
+          <li><a href="boon5.html" data-link-alt="바스커빌 사이사이"><span>바스커빌 사이사이</span></a></li>
+          <li><a href="boon6.html" data-link-alt="바스커빌 크기무게"><span>바스커빌 크기무게</span></a></li>
+        </ul>
+    </div>
+
+    <img src="과제6_21861110_정다은_영1꼴.jpg" width="100%" alt="" />
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+  </body>
+</html>

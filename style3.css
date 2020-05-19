@@ -1,0 +1,93 @@
+body {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  padding: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  background: url(ba1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  display: table;}
+
+  ul.navi {
+    width: 100%;
+    padding: 13px;
+    background-color:#fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
+    margin: auto;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  ul.navi li {
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  ul.navi li a {
+    color: #8C8C8C;
+    text-decoration: none;
+    margin: 0 12px;
+    display: block;
+    position: relative;
+  }
+
+  ul.navi li a:before {
+    content: attr(data-link-alt);
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 100%;
+    transition: 0.5s;
+  }
+
+  ul.navi li a span {
+    color: #000;
+    display: block;
+    transition: 0.5s;
+
+  }
+  ul.navi li a:hover span {
+    transform: translateY(-100%);
+  }
+
+  ul.navi li a:hover:before {
+    opacity: 1;
+    top: 0;
+  }
+
+#ibrahim {
+  fill-opacity: 0;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1000;
+}
+
+#youtube {
+  fill-opacity: 100;
+  color: #fff;
+}
+
+#ibrahim {
+  animation: ibrahim 6s ease-in-out;
+}
+
+@keyframes ibrahim {
+  0% {
+    stroke-dashoffset: 1000;
+    stroke-width: 0.2;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+
+}
